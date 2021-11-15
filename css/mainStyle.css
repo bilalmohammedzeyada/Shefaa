@@ -1,0 +1,910 @@
+/* 
+14/11/2021
+Shefaa Project
+ */
+
+ *{
+     margin: 0; padding: 0; box-sizing: border-box;
+ }
+
+ /* Global Definition start */
+ 
+ .flex-row{
+     display: flex;
+ }
+ @font-face {
+     font-family: Expo;
+     src: url(../fonts/ExpoArabic-Book.ttf);
+ }
+ body{
+     font-family: Expo;
+ }
+ /* Global Definition end */
+
+ /* ============================================================== */
+
+ /* mainPage start */
+ .mainPage {
+     font-family: Expo;
+ }
+ .mainPage .container{
+     padding: 0;
+     margin: 15px;
+ }
+ .mainPage .row{
+     flex-wrap: nowrap;
+ }
+ .smallSize{
+     display: none;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainPage .container{
+        margin: 0;
+    }
+    .largeSize{
+        display:none;
+    }
+    .smallSize{
+        padding: 10px;
+    }
+    .mainPage .row{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .smallSize .left{
+        padding: 10px;
+    }
+    .largeSize{
+        display:none;
+    }
+    .mainPage .row{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .smallSize{
+        display: none;
+    }
+ }
+  /* ============================================================== */
+ /* &&&&& rightSide start &&&&& */
+ .mainPage .right{
+     background-color: #40C0DC;
+     height: 720px;
+     text-align: center;
+     padding: 20px;
+     padding-top: 50px;
+     margin-right: 15px;
+     border-radius: 30px;
+     height:120.5vh;
+}
+@media (min-width:320px) and (max-width:767px){
+    .mainPage .right{
+        padding: 0;
+        margin: 0;
+        height:15vh;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .right{
+        padding: 0;
+        margin: 0;
+        height:15vh;
+    }
+ }
+.mainPage .right .footer{
+    margin-top: 600px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .mainPage .right .footer{
+        display: none;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .right .footer{
+        display: none;
+    }
+ }
+ .mainPage .right p{
+     color: #fff;
+     font-size: 30px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainPage .right p{
+        color: #fff;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .right p{
+        color: #fff;
+        font-size: 22px;
+        margin-top: 20px;
+    }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .mainPage .right p{
+        font-size: 26px;
+    }
+ }
+ .mainPage .right .subDiv{
+     margin-top: 40px;
+     text-align: center;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainPage .right .subDiv{
+        margin-top: 20px;
+    }}
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .right .subDiv{
+        margin-top: 20px;
+    } 
+ }
+ .mainPage .right i{
+    font-size: 16px;
+    margin-left: 18px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainPage .right i{
+        font-size: 12px;
+        margin-left: 18px;
+     }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .right i{
+        font-size: 14px;
+        margin-left: 18px;
+     }
+ }
+ .mainPage .right a{
+     display: inline-block;
+     color: #F5F5F5;
+     text-decoration: none;
+     font-size: 20px;
+     margin-bottom: 30px;
+ }
+  @media (min-width:320px) and (max-width:767px){
+    .mainPage .right a{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .right a{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .mainPage .right a{
+        font-size: 18px;
+    }
+ }
+ .mainPage .right a:nth-of-type(2){
+     margin-right: 16px;
+ }
+ .mainPage .right a:hover{
+     color: #fff;
+    text-shadow: 0 0 5px #fff;   
+ }
+ .mainPage .right a:active{
+     color: #fff;   
+ }
+  /* &&&&& rightSide end &&&&& */
+/* ================================================================= */
+ 
+/* &&&&& leftSide start &&&&& */
+ .mainPage .left{
+     height:100vh;
+     display: none;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainPage .left{
+        height:calc(100vh - (15vh + 30px));
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .left{
+        height:calc(100vh - (15vh + 30px));
+    }
+ }
+ .mainPage .boxes{
+     margin-right: 15px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainPage .boxes{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .boxes{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ }
+ .mainPage .box{
+     padding: 12px;
+     border-radius:20px ;
+     margin-left: 13px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainPage .box{
+        margin-top: 15px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .box{
+        margin-top:15px;
+    }
+ }
+ .mainPage .box:last-child{
+    margin-left: 0;
+ }
+ .mainPage .box:nth-of-type(1){
+    background-color: #DAF1EA;
+ }
+ .mainPage .box:nth-of-type(2){
+    background-color: #D7F1F6;
+ }
+ .mainPage .box:nth-of-type(3){
+    background-color: #F8DFD9;
+ }
+ .mainPage .box:nth-of-type(4){
+    background-color: #F9E2FA;
+ }
+ .mainPage .box p{
+     font-size: 18px;
+     margin-top: 10px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainPage .box p{
+        font-size: 12px;
+    }
+    .mainPage .box img{
+        width: 15%;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .box p{
+        font-size: 14px;
+    }
+    .mainPage .box img{
+        width: 17%;
+    }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .mainPage .box p{
+        font-size: 14px;
+    }
+    .mainPage .box img{
+        width:20%;
+    }
+ }
+ .mainPage .box span{
+     color: #E66B4C;
+     font-size: 22px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainPage .box span{
+        font-size: 14px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainPage .box span{
+        font-size: 16px;
+    }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .mainPage .box span{
+        font-size: 18px;
+    }
+ }
+ /* =================================================================== */
+ /* mainDiv start */
+ .main{
+ margin-top: 20px;
+ padding: 15px;
+ padding-bottom: 70px;
+ margin-bottom: 30px;
+ box-shadow: 0 0 4px 0 rgb(192, 191, 191,0.5);
+ border-radius: 15px;
+ width: 950px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .main{
+        width: 100%;
+        overflow-x: scroll;
+   }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .main{
+        width: 100%;
+        overflow-x: scroll;
+   }
+ }
+ 
+ @media (min-width:992px) and (max-width:1199px){
+    .main{
+        width: 100%;
+        overflow-x: scroll;
+   }
+ }
+.blockPanel .main{
+    margin-top: 0;
+}
+ .main .btn-success{
+     background-color: #50C4A1;
+     font-size: 16px;
+     border-radius: 10px;
+     margin-left: 15px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .main .btn-success{
+        font-size: 12px;
+        margin-left: 12px;
+   }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .main .btn-success{
+        font-size: 14px;
+        margin-left: 12px;
+   }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .main .btn-success{
+        font-size: 14px;
+        margin-left: 12px;
+   }
+ }
+.main form i{
+    position: absolute;
+    z-index: 2;
+   margin-right: 8px;
+   margin-top: 12px;
+   font-size: 14px;
+   color:#949494 ;
+}
+@media (min-width:320px) and (max-width:767px){
+    .main form i{
+       font-size: 12px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .main form i{
+        font-size: 14px;
+     }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .main form i{
+        font-size: 14px;
+     }
+ }
+.main input{
+   width: 300px;
+   padding: 10px;
+   padding-right: 23px;
+   font-size: 14px;
+   color: #949494;
+   background-color: #F5F5F5;
+   border: none;
+   border-radius: 10px;
+   position: relative; 
+}
+@media (min-width:320px) and (max-width:767px){
+    .main input{
+        width: 200px;
+        font-size: 12px;
+     }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .main input{
+        width: 220px;
+        font-size: 12px;
+     }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .main input{
+        width: 220px;
+        font-size: 13px;
+     }
+ }
+.main input:focus{
+    outline: none;
+}
+.main input::placeholder{
+    font-size: 14px;
+    color: #949494;
+}
+@media (min-width:320px) and (max-width:767px){
+    .main input::placeholder{
+        font-size: 12px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .main input::placeholder{
+        font-size: 12px;
+    }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .main input::placeholder{
+        font-size: 13px;
+    }
+ }
+.main .tableDiv{
+    margin-top: 30px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .main .tableDiv{
+        width: 100%;
+    }
+   }
+   @media (min-width:768px) and (max-width:991px){
+    .main .tableDiv{
+        width: 100%;
+    }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .main .tableDiv{
+        width: 100%;
+    }
+ }
+.main .tableDiv .table thead tr{
+    background-color: #40C0DC;
+    text-align: right;
+}
+.main .tableDiv .table th{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 200;
+    padding: 10px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .main .tableDiv .table th{
+        font-size: 13px;
+        padding: 0 50px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .main .tableDiv .table th{
+        font-size: 14px;
+        padding: 0 60px;
+    }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .main .tableDiv .table th{
+        font-size: 14px;
+        padding: 0 50px;
+    }
+ }
+.main .tableDiv .table tbody tr{
+    text-align: right;
+    font-size: 16px;
+    color: #000;
+    background-color: #EBF9FC;
+}
+@media (min-width:320px) and (max-width:767px){
+    .main .tableDiv .table tbody tr{
+        font-size: 12px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .main .tableDiv .table tbody tr{
+        font-size: 14px;
+    }
+ }
+ @media (min-width:992px) and (max-width:1199px){
+    .main .tableDiv .table tbody tr{
+        font-size: 15px;
+    }
+ }
+.main .tableDiv .table tbody td:nth-of-type(6){
+    background-color: #fff;
+}
+.main .tableDiv .table tbody td:nth-of-type(7){
+    background-color: #fff;
+}
+.main .tableDiv .table tbody td:nth-of-type(8){
+    background-color: #fff;
+}
+.blockPanel .main .tableDiv .table tbody td:nth-of-type(6){
+    background-color: #fff;
+}
+.blockPanel .main .tableDiv .table tbody td:nth-of-type(7){
+    background-color: #fff;
+}
+
+@media (min-width:320px) and (max-width:767px){
+    .mainPage .left.blockPanel{
+       margin: 20px 0;
+    } 
+ }
+@media (min-width:768px) and (max-width:991px){
+    .mainPage .left.blockPanel{
+       margin: 20px auto;
+    } 
+ }
+ 
+.main nav{
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .main nav{
+        margin-top: 15px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .main nav{
+        margin-top: 15px;
+    }
+ }
+ 
+.main nav .page-link{
+    border-radius: 10px;
+    border:0.5px solid #40C0DC;
+    margin-right: 5px;
+}
+.main nav a.page-link{
+    font-size: 12px;
+    color: #40C0DC;
+}
+.main nav a.page-link:active{
+    background-color: #40C0DC;
+    color: #fff;
+}
+.main nav a.page-link:hover{
+    background-color: #40C0DC;
+    color: #fff;
+}
+.main .page-item:first-child .page-link{
+    border:0.5px solid #949494;
+    color: #949494;
+    background-color:rgb(148, 148, 148,0.2);
+}
+.main .page-item:last-child .page-link{
+    border:0.5px solid #949494;
+    color: #949494;
+    background-color:rgb(148, 148, 148,0.2);
+}
+.main .table i{
+    font-size: 14px;
+    color: #D15241;
+}
+@media (min-width:320px) and (max-width:767px){
+    .main .table i{
+        font-size: 12px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .main .table i{
+        font-size: 13px;
+    }
+ }
+.main .table i.fa-envelope {
+    color: #50C4A1;
+}
+.blockPanel .main .table i.fa-unlock-alt{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #50C4A1;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 20px;
+}
+ /* mainDiv end */
+
+
+
+
+
+ /* =========================================================================== */
+
+ /* modal start */
+ .modal{
+     padding-top: 150px;
+ }
+ .modal-content{
+     background-color: #40C0DC;
+     border-radius: 20px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .modal-content{
+        width: 80%;
+        margin: 0 auto;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal-content{
+        width: 80%;
+        margin: 0 auto;
+    }
+ }
+ .modal-header{
+     margin: 0 auto;
+     border: none;
+     margin-top: 20px;
+ }
+ .modal-header h5.modal-title{
+     color: #fff;
+     font-size: 22px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .modal-header h5.modal-title{
+        font-size: 16px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal-header h5.modal-title{
+        font-size: 16px;
+    }
+ }
+ .modal .modal-body{
+     margin: 0 auto;
+ }
+ .modal .modal-body input{
+     display: block;
+     margin-top: 20px;
+     padding: 10px 10px;
+     font-size: 16px;
+     background-color: #40C0DC;
+     color: #fff;
+     border: 0.5px solid #fff;
+     border-radius: 10px;
+     width: 360px;
+     position: relative;
+}
+@media (min-width:320px) and (max-width:767px){
+    .modal .modal-body input{
+        font-size: 14px;
+        width: 280px;
+   }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal .modal-body input{
+        font-size: 14px;
+        width: 280px;
+   }
+ }
+.modal .modal-body input:focus{
+    outline: none;
+}
+ .modal .modal-body input::placeholder{
+     font-size: 16px;
+     color: #fff;
+     font-weight: lighter;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .modal .modal-body input::placeholder{
+        font-size: 14px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal .modal-body input::placeholder{
+        font-size: 14px;
+    }
+ }
+ .modal .modal-body input:last-child{
+text-align: center;
+width: 50%;
+margin: auto;
+margin-top: 30px;
+background-color: #fff;
+color: #40C0DC;
+border: 0.5px solid transparent;
+ }
+ .modal .modal-body input:last-child:hover{
+     background-color: #40C0DC;
+     color: #fff;
+     border: 0.5px solid #fff;
+     padding: 10px 0;
+ }
+ .modal-body .telephone{
+     position: absolute;
+     left: 50px;
+     top: 114px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .modal-body .telephone{
+        position: absolute;
+        top: 110px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal-body .telephone{
+        position: absolute;
+        top: 110px;
+    }
+ }
+ .modal-body .telephone span{
+     color: #fff;
+     font-size: 14px;
+ }
+ .modal-body form i{
+     position: absolute;
+     left: 30px;
+     top: 50px;
+     font-size: 22px;
+     color: #fff;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .modal-body form i{
+        font-size: 14px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal-body form i{
+        font-size: 14px;
+    }
+ }
+ .modal-body form i:nth-of-type(2){
+    top:113px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .modal-body form i:nth-of-type(2){
+        font-size: 24px;
+        top: 110px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal-body form i:nth-of-type(2){
+        font-size: 24px;
+        top: 110px;
+    }
+ }
+ .modal-body form i:nth-of-type(3){
+    top:180px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .modal-body form i:nth-of-type(3){
+        top:175px;
+     }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal-body form i:nth-of-type(3){
+        top:175px;
+     }
+ }
+ .modal-body form i:nth-of-type(4){
+    top:245px;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .modal-body form i:nth-of-type(4){
+        top:238px;
+     }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal-body form i:nth-of-type(4){
+        top:238px;
+     }
+ }
+ /* addDoctor modal end */
+
+ /* messageModal start */
+ .messageModal textarea{
+     background-color: #40C0DC;
+     border: 0.5px solid #fff;
+     padding: 20px;
+     border-radius: 15px;
+     font-size: 16px;
+     color: #fff;
+}
+@media (min-width:320px) and (max-width:767px){
+    .messageModal textarea{
+        padding: 10px;
+        font-size: 14px;
+   }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .messageModal textarea{
+        padding: 10px;
+        font-size: 14px;
+   }
+ }
+.messageModal textarea:focus{
+    outline: none;
+}
+.messageModal textarea::placeholder{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 200;
+}
+@media (min-width:320px) and (max-width:767px){
+    .messageModal textarea::placeholder{
+        font-size: 14px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .messageModal textarea::placeholder{
+        font-size: 14px;
+    }
+ }
+ /* messageModal end */
+
+ /* blockModal start */
+ #blockModal{
+     padding-top: 250px;
+ }
+.modal .block{
+     font-size: 16px;
+     background-color: #fff;
+     color: #40C0DC;
+     border:none;
+     padding: 10px 70px;
+     border-radius: 15px;
+     margin-left: 20px;
+     border: 0.5px solid transparent;
+}
+@media (min-width:320px) and (max-width:767px){
+    .modal .block{
+        font-size: 14px;
+        padding: 10px 50px;
+   }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .modal .block{
+        font-size: 14px;
+        padding: 10px 50px;
+   }
+ }
+#blockModal .block:nth-of-type(2){
+    margin-left: 0;
+}
+#blockModal .block:hover{
+    background-color: #40C0DC;
+    color: #fff;
+    border: 0.5px solid #fff;
+}
+ /* blockModal end */
+
+ /* deleteModal start */
+ #deleteModal{
+    padding-top: 250px;  
+ }
+ #deleteModal .delete{
+    font-size: 16px;
+    background-color: #fff;
+    color: #40C0DC;
+    border:none;
+    padding: 10px 70px;
+    border-radius: 15px;
+    margin-left: 20px;
+    border: 0.5px solid transparent;
+}
+@media (min-width:320px) and (max-width:767px){
+    #deleteModal .delete{
+        font-size: 14px;
+        color: #40C0DC;
+        padding: 10px 50px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    #deleteModal .delete{
+        font-size: 14px;
+        color: #40C0DC;
+        padding: 10px 50px;
+    }
+ }
+#deleteModal .delete:nth-of-type(2){
+   margin-left: 0;
+}
+#deleteModal .delete:hover{
+   background-color: #40C0DC;
+   color: #fff;
+   border: 0.5px solid #fff;
+}
+ /* deleteModal end */
+
+ /* &&&&& leftSide end &&&&& */
+ /* mainPage end */
+ 

@@ -1,0 +1,328 @@
+/* 
+14/11/2021
+Shefaa Project
+ */
+
+
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+/* Global Definition start */
+
+.flex-row{
+    display: flex;
+}
+@font-face {
+    font-family: Expo;
+    src: url(../fonts/ExpoArabic-Book.ttf);
+}
+body{
+    font-family: Expo;
+}
+/* Global Definition end */
+
+/* LoginPage start  */
+
+.loginPage .left {
+width: 70%;
+float: left;
+padding: 0;
+padding-top: 150px;
+padding-left: 130px;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .left {
+      width:100%;
+      float: none;
+      padding: 0;
+      padding-top: 40px;
+      }
+}
+.loginPage .left h2{
+   font-size: 40px;
+   color: #000;
+   text-align: center;
+   margin-bottom: 50px;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .left h2{
+      font-size: 20px;
+      margin-bottom:30px;
+   }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .left h2{
+      padding-top:40px;
+      padding-right:60px;
+      font-size: 28px;
+      margin-bottom:30px;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .left h2{
+      font-size: 30px;
+     margin-bottom: 50px;
+     padding-top: 50px;
+   }
+}
+.loginPage .left form{
+    background-color: #40C0DC;
+    border-radius: 12px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .left form{
+      width: 70%;
+      padding: 10px;
+  }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .left form{
+      width: 100%;
+      margin-right: 40px;
+      padding: 30px;
+  }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .left form{
+      width: 70%;
+      margin: 0 auto;
+      padding: 30px;
+  }
+}
+.loginPage .left .data{
+   font-size:16px;
+   width: 80%;
+   border-radius: 8px;
+   padding: 10px;
+   background-color: #40C0DC;
+   border: 0.5px solid #fff;
+   color: #fff;
+   margin-top: 20px;
+   position: relative;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .left .data{
+      font-size:12px;
+   }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .left .data{
+      font-size:14px;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .left .data{
+      font-size:15px;
+   }
+}
+.loginPage .left .data:focus{
+   outline: none;
+}
+.loginPage .left .data::placeholder{
+   color: #fff;
+   font-size: 16px;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .left .data::placeholder{
+      font-size: 12px;
+   }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .left .data::placeholder{
+      font-size:14px;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .left .data::placeholder{
+      font-size:15px;
+   }
+}
+.loginPage .left a{
+   display: block;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 100;
+   margin-top: 15px;
+   margin-bottom: 35px;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .left a{
+      font-size: 12px;
+   }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .left a{
+      font-size: 12px;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .left a{
+      font-size: 12px;
+   }
+}
+.loginPage .left a:hover{
+   text-decoration: none;
+   text-shadow: 0 0 5px #fff;
+}
+.loginPage .left i{
+   color: #fff;
+   font-size: 16px;
+   position: absolute;
+   top: 314px;
+   left: 433px;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .left i{
+      font-size: 12px;
+      top: 138px;
+      left: 135px;
+   }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .left i{
+      font-size: 12px;
+      top: 318px;
+      left: 164px;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .left i{
+      font-size: 14px;
+      top: 350px;
+      left: 285px;
+   }
+}
+.loginPage .left i:nth-of-type(2){
+   top:380px;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .left i:nth-of-type(2){
+      top:198px;
+   }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .left i:nth-of-type(2){
+      top:382px;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .left i:nth-of-type(2){
+      top:416px;
+   }
+}
+.loginPage .login{
+   color: #40C0DC;
+   font-size: 16px;
+   background-color: #fff;
+   border: 0.5px solid transparent;
+   border-radius: 10px;
+   padding:10px 30px;
+   transition: 0.5s;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .login{
+      font-size: 12px;
+   }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .login{
+      font-size: 12px;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .login{
+      font-size: 14px;
+   }
+}
+.loginPage .login:hover{
+   background-color: #40C0DC;
+   color: #fff;
+   border: 0.5px solid #fff;
+}
+/*  Right side start */
+.loginPage .right{
+   background-color: #E2F6FA;
+   text-align: center;
+   width: 40%;
+   float: right;
+   padding-top: 200px;
+   height: 752px;
+   border-radius: 50px 0 0 50px;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .loginPage .right{
+      width: 100%;
+      height: auto;
+      padding-top: 30px;
+      border-radius:0;
+}
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .right{
+      height: 750px;
+      padding-top: 240px;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .right{
+      height: 750px;
+      padding-top: 240px;
+   }
+}
+.loginPage .right h1{
+   color:#40C0DC ;
+   font-size: 50px !important;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .right h1{
+      font-size: 30px !important;
+   }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .right h1{
+      font-size: 32px !important;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .right h1{
+      font-size: 40px !important;
+   }
+}
+.loginPage .right img{
+   width: 220px;
+   height: 205px;
+   margin-bottom: 50px;
+}
+@media (min-width:320px) and (max-width:767px) {
+   .loginPage .right img{
+      width:150px;
+      height: 150px;
+      margin-bottom: 30px;
+   }
+}
+@media (min-width:768px) and (max-width:991px) {
+   .loginPage .right img{
+      width:150px;
+      height: 150px;
+      margin-bottom: 30px;
+   }
+}
+@media (min-width:992px) and (max-width:1199px) {
+   .loginPage .right img{
+      width:180px;
+      height: 150px;
+      margin-bottom: 30px;
+   }
+}
+/* LoginPage end  */

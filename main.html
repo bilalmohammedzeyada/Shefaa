@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم</title>
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="imgs/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/mainStyle.css">
+</head>
+<!-- ======================================================================= -->
+<body>
+    <!-- mainPage start -->
+ <section class="mainPage">
+  <div class="container">
+      <div class="row flex-row">
+
+    <!-- right side start -->
+          <div class="right col-md-3 largeSize">
+              <p>لوحة التحكم</p>
+              <div class="subDiv">
+              <a href="#doctorPanel" class="doctor"><i class="fa fa-user-circle-o"></i>حسابات الأطباء</a>
+              <a href="#blockPanel" class="block"><i class="fa fa-ban"></i>القائمة المحظورة</a>
+              </div>
+              <div class="footer" >
+                  <img src="imgs/shefaalogo.png" alt="">
+              </div>
+          </div>
+
+    <!-- right side end -->
+ <!-- ===================================================================== -->
+          
+          
+    <!-- left side start doctorPanel -->
+        <div class="left doctorPanel col-lg-9 col-md-8" id="doctorPanel">
+        <!-- $$$ topSide start &&& -->
+              <div class="topSide boxes flex-row">
+                <div class="box text-right">
+                    <img src="imgs/user.png" alt="">
+                    <p>اجمالي حسابات الأطباء</p>
+                    <span>120</span>
+                </div>
+                <div class="box text-right">
+                    <img src="imgs/user.png" alt="">
+                    <p> حسابات الأطباء الفعالة</p>
+                    <span>120</span>
+                </div>
+                <div class="box text-right">
+                    <img src="imgs/user.png" alt="">
+                    <p>عدد المرضى المسجلين</p>
+                    <span>120</span>
+                </div>
+                <div class="box text-right">
+                    <img src="imgs/user.png" alt="">
+                    <p>الأطباء المسجلين مؤخرا</p>
+                    <span>120</span>
+                </div>
+              </div>
+         <!-- $$$ topSide end &&& -->
+
+         <!-- $$$ mainSide start &&& -->
+         <div class="main">
+             <div class="mainButton text-right flex-row">
+                 <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">اضافة +</button>
+                 <button class="btn btn-success" data-toggle="modal" data-target="#messageModal">رسالة للكل <i class="fa fa-envelope"></i></button>
+                 <form action="">
+                     <i class="fa fa-search"></i>
+                     <input type="search" name="" id="" placeholder="ابحث عن حساب">
+                 </form>
+             </div>
+             <!-- TableDiv start -->
+             <div class="tableDiv">
+                <table class="table" id="page1">
+                    <thead>
+                      <tr>
+                        <th scope="col">اسم الطبيب</th>
+                        <th scope="col">الايميل</th>
+                        <th scope="col">رقم الهاتف</th>
+                        <th scope="col">تاريخ الاشتراك<img src="imgs/svgexport-6 (3).png"> </th>
+                        <th scope="col">عدد المرضى لديه</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                        <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                            <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                            <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>
+             <!-- TableDiv end -->
+
+             <!-- Pagination start -->
+             <nav aria-label="Page navigation example ">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="clear"></p>
+               <!-- Pagination end -->
+         </div>
+         <!-- $$$ mainSide end &&& -->
+        </div>
+     <!-- left side end -->
+ <!-- ===================================================================== -->
+    <!-- left side start blockPanel-->
+          <div class="left blockPanel col-md-9" id="blockPanel">
+         <!-- $$$ mainSide start &&& -->
+         <div class="main">
+             <div class="mainButton text-right flex-row">
+                <form action="">
+                    <i class="fa fa-search"></i>
+                    <input type="search" name="" id="" placeholder="ابحث عن حساب">
+                </form> 
+             </div>
+             <!-- TableDiv start -->
+             <div class="tableDiv">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">اسم الطبيب</th>
+                        <th scope="col">الايميل</th>
+                        <th scope="col">رقم الهاتف</th>
+                        <th scope="col">تاريخ الاشتراك<img src="imgs/svgexport-6 (3).png"> </th>
+                        <th scope="col">عدد المرضى لديه</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">زهير محمد زياد بدر</td>
+                        <td>ahmed.92@hotmail.com</td>
+                        <td>972597722213+</td>
+                        <td>15/12/2021</td>
+                        <td>210</td>
+                        <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                        <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>
+             <!-- TableDiv end -->
+             <!-- Pagination start -->
+             <nav aria-label="Page navigation example ">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="clear"></p>
+               <!-- Pagination end -->
+         </div>
+         <!-- $$$ mainSide end &&& -->
+          </div>
+          <!-- left side end -->
+      </div>
+  </div>
+
+<!-- ======================================================================= -->
+
+<!-- /* xs media query div start */ -->
+<section class="smallSize">
+<div class="container">
+  <div class="row">
+
+ <!-- right side start -->
+ <div class="right">
+  <p>لوحة التحكم</p>
+  <div class="subDiv">
+  <a href="#doctorPanel" class="doctor doctorDiv" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-user-circle-o"></i>حسابات الأطباء</a>
+  <a href="#blockPanel" class="block blockDiv" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-ban"></i>القائمة المحظورة</a>
+  </div>
+  <div class="footer" >
+      <img src="imgs/shefaalogo.png" alt="">
+  </div>
+</div>
+
+<!-- right side end -->
+
+
+    <div class="left doctorPanel addDoc" id="doctorPanel collapseExample">
+      <!-- $$$ topSide start &&& -->
+            <div class="topSide boxes flex-row">
+              <div class="box text-right">
+                  <img src="imgs/user.png" alt="">
+                  <p>اجمالي حسابات الأطباء</p>
+                  <span>120</span>
+              </div>
+              <div class="box text-right">
+                  <img src="imgs/user.png" alt="">
+                  <p> حسابات الأطباء الفعالة</p>
+                  <span>120</span>
+              </div>
+              <div class="box text-right">
+                  <img src="imgs/user.png" alt="">
+                  <p>عدد المرضى المسجلين</p>
+                  <span>120</span>
+              </div>
+              <div class="box text-right">
+                  <img src="imgs/user.png" alt="">
+                  <p>الأطباء المسجلين مؤخرا</p>
+                  <span>120</span>
+              </div>
+            </div>
+       <!-- $$$ topSide end &&& -->
+
+       <!-- $$$ mainSide start &&& -->
+       <div class="main">
+           <div class="mainButton text-right flex-row">
+               <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">اضافة +</button>
+               <button class="btn btn-success" data-toggle="modal" data-target="#messageModal">رسالة للكل <i class="fa fa-envelope"></i></button>
+               <form action="">
+                   <i class="fa fa-search"></i>
+                   <input type="search" name="" id="" placeholder="ابحث عن حساب">
+               </form>
+           </div>
+           <!-- TableDiv start -->
+           <div class="tableDiv">
+              <table class="table" id="page1">
+                  <thead>
+                    <tr>
+                      <th scope="col">اسم الطبيب</th>
+                      <th scope="col">الايميل</th>
+                      <th scope="col">رقم الهاتف</th>
+                      <th scope="col">تاريخ الاشتراك<img src="imgs/svgexport-6 (3).png"> </th>
+                      <th scope="col">عدد المرضى لديه</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                          <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">زهير محمد زياد بدر</td>
+                      <td>ahmed.92@hotmail.com</td>
+                      <td>972597722213+</td>
+                      <td>15/12/2021</td>
+                      <td>210</td>
+                      <td data-toggle="modal" data-target="#messageModal2"><i class="fa fa-envelope"></i></td>
+                          <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                          <td data-toggle="modal" data-target="#blockModal"><i class="fa fa-ban"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+           </div>
+           <!-- TableDiv end -->
+           <!-- Pagination start -->
+           <nav aria-label="Page navigation example ">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <p class="clear"></p>
+             <!-- Pagination end -->
+       </div>
+       <!-- $$$ mainSide end &&& -->
+      </div>
+
+      <div class="left blockPanel col-md-9 blockDoc" id="doctorPanel collapseExample2">
+        <!-- $$$ mainSide start &&& -->
+        <div class="main">
+            <div class="mainButton text-right flex-row">
+               <form action="">
+                   <i class="fa fa-search"></i>
+                   <input type="search" name="" id="" placeholder="ابحث عن حساب">
+               </form> 
+            </div>
+            <!-- TableDiv start -->
+            <div class="tableDiv">
+               <table class="table">
+                   <thead>
+                     <tr>
+                       <th scope="col">اسم الطبيب</th>
+                       <th scope="col">الايميل</th>
+                       <th scope="col">رقم الهاتف</th>
+                       <th scope="col">تاريخ الاشتراك<img src="imgs/svgexport-6 (3).png"> </th>
+                       <th scope="col">عدد المرضى لديه</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                     <tr>
+                       <td scope="row">زهير محمد زياد بدر</td>
+                       <td>ahmed.92@hotmail.com</td>
+                       <td>972597722213+</td>
+                       <td>15/12/2021</td>
+                       <td>210</td>
+                       <td data-toggle="modal" data-target="#unblockModal"><i class="fa fa-unlock-alt"></i></td>
+                       <td data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></td>
+                     </tr>
+                   </tbody>
+                 </table>
+            </div>
+            <!-- TableDiv end -->
+            <!-- Pagination start -->
+            <nav aria-label="Page navigation example ">
+               <ul class="pagination">
+                 <li class="page-item">
+                   <a class="page-link" href="#" aria-label="Previous">
+                     <span aria-hidden="true">&laquo;</span>
+                   </a>
+                 </li>
+                 <li class="page-item"><a class="page-link" href="#">1</a></li>
+                 <li class="page-item"><a class="page-link" href="#">2</a></li>
+                 <li class="page-item"><a class="page-link" href="#">3</a></li>
+                 <li class="page-item">
+                   <a class="page-link" href="#" aria-label="Next">
+                     <span aria-hidden="true">&raquo;</span>
+                   </a>
+                 </li>
+               </ul>
+             </nav>
+             <p class="clear"></p>
+              <!-- Pagination end -->
+        </div>
+        <!-- $$$ mainSide end &&& -->
+         </div>  
+  </div>
+</div>
+</section>
+<!-- /* xs media query div end */ -->
+
+<!-- ======================================================================= -->
+
+
+
+
+
+<!-- addDoctor Modal start -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">إضافة طبيب</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+              <input type="text" name="" id="" vlaue="" placeholder="الاسم رباعي">
+              <i class="fa fa-user"></i>
+              <input type="tel" name="" id="" vlaue="" placeholder="رقم الهاتف">
+              <i class="fa fa-mobile"></i>
+              <div class="telephone">
+                <span>970+</span>
+                  <img src="imgs/svgexport-7 (1).png" alt="">
+              </div>
+              <input type="email" name="" id="" vlaue="" placeholder="البريد الالكتروني">
+              <i class="fa fa-envelope-o"></i>
+              <input type="password" name="" id="" vlaue="" placeholder="كلمة المرور">
+              <i class="fa fa-eye-slash"></i>
+              <input type="submit" value="إنشاء الحساب">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- addDoctor Modal end -->
+    <!-- ======================================================== -->
+<!-- sendMessageAll Modal start -->
+<div class="modal fade messageModal" id="messageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ارسال رسالة للكل</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+              <textarea name="" id="" cols="35" rows="5" placeholder="اكتب الرسالة هنا"></textarea>
+              <input type="submit" value="ارسال">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- sendMessageAll Modal end -->
+    <!-- ======================================================== -->
+<!-- sendMessage Modal start -->
+<div class="modal fade messageModal" id="messageModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ارسال رسالة</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p class="text-right" style="color: #fff;"><span>إلى :</span> حمزة سعيد محمد رضوان</p>
+          <form action="">
+              <textarea name="" id="" cols="35" rows="5" placeholder="اكتب الرسالة هنا"></textarea>
+              <input type="submit" value="ارسال">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- sendMessage Modal end -->
+    <!-- ======================================================== -->
+<!--BlockModal start -->
+<div class="modal fade messageModal" id="unblockModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">هل أنت متأكد من إزالة الحظر ؟</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <button class="block">تأكيد</button>
+             <button class="block">إلغاء</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- BlockModal end -->
+   <!-- ======================================================== -->
+
+    <!-- ======================================================== -->
+<!--BlockModal start -->
+<div class="modal fade messageModal" id="blockModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">هل أنت متأكد من حظر الحساب ؟</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <button class="block">تأكيد</button>
+             <button class="block">إلغاء</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- BlockModal end -->
+   <!-- ======================================================== -->
+<!-- deleteModal start -->
+<div class="modal fade messageModal" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">هل أنت متأكد من حذف الحساب ؟</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <button class="delete">تأكيد</button>
+                 <button class="delete">إلغاء</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- deleteModal end -->
+
+</section>
+     <!-- mainPage end -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>  
+</body>
+</html>
