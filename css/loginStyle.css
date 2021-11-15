@@ -184,6 +184,11 @@ padding-left: 130px;
       left: 135px;
    }
 }
+@media (max-width:604.8px) {
+   .loginPage .left i{
+      left: 149px;
+   }
+}
 @media (min-width:768px) and (max-width:991px) {
    .loginPage .left i{
       font-size: 12px;
@@ -326,3 +331,75 @@ padding-left: 130px;
    }
 }
 /* LoginPage end  */
+
+
+/* forgetModal start */
+.forget{
+   padding-top: 250px;
+}
+.modal-content{
+   background-color: #40C0DC;
+   border-radius: 20px;
+}
+.modal-header{
+   margin: 0 auto;
+   border: none;
+   margin-top: 20px;
+}
+.modal-header h5.modal-title{
+   color: #fff;
+   font-size: 22px;
+   font-weight: 100;
+}
+.modal .modal-body{
+   margin: 0 auto;
+}
+.modal .modal-body input{
+   display: block;
+   margin-top: 20px;
+   padding: 10px 10px;
+   font-size: 16px;
+   background-color: #40C0DC;
+   color: #fff;
+   border: 0.5px solid #fff;
+   border-radius: 10px;
+   width: 360px;
+   position: relative;
+}
+.modal .modal-body input:focus{
+   outline: none;
+}
+.modal .modal-body input::placeholder{
+    font-size: 16px;
+    color: #fff;
+    font-weight: lighter;
+}
+.modal .modal-body input:last-child{
+   text-align: center;
+   width: 50%;
+   margin: auto;
+   margin-top: 30px;
+   background-color: #fff;
+   color: #40C0DC;
+   border: 0.5px solid transparent;
+    }
+    .modal .modal-body input:last-child:hover{
+      background-color: #40C0DC;
+      color: #fff;
+      border: 0.5px solid #fff;
+      padding: 10px 0;
+  }
+  .modal-body i{
+   position: absolute;
+   left: 30px;
+   top: 50px;
+   color: #fff;
+}
+    
+/* forgetModal end */
+
+
+
+
+
+

@@ -27,12 +27,32 @@
                     <i class="fa fa-envelope-o"></i>
                     <input class="data" type="password" name="" id="" placeholder="كلمة المرور" value="">
                     <i class="fa fa-eye-slash"></i><br>
-                    <a href="##">نسيت كلمة المرور</a>
+                    <a data-toggle="modal" data-target="#forgetModal">نسيت كلمة المرور</a>
                     <input type="submit" value="تسجيل الدخول" class="login">
                 </form>
             </div>   
   </section>
   <!-- LoginPage end -->
+
+
+  <!-- modal for forget Password start -->
+  <div class="modal fade forget" id="forgetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">إعادة تعيين كلمة المرور </h5>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <input type="email" name="" id="" placeholder="البريد الالكتروني">
+                <i class="fa fa-envelope-o"></i>
+                 <input type="submit" value="إرسال (22)">
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal for forget Password end -->
     
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
