@@ -57,10 +57,6 @@ $(document).ready(function(){
       $('.doctorPanel').css({'display':'block'});
       $('.blockPanel').css({'display':'none'});
     });
-    $('.reverseDel1').click(function(){
-      $('.doctorPanel').css({'display':'block'});
-      $('.blockPanel').css({'display':'none'});
-    });
 // بعد الضغط على زر ازالة الحظر
     $('.sureUn').click(function(){
       $('.doctorPanel').css({'display':'block'});
