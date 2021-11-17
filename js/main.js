@@ -57,7 +57,7 @@ $(document).ready(function(){
       $('.doctorPanel').css({'display':'block'});
       $('.blockPanel').css({'display':'none'});
     });
-    $('.reverseDel').click(function(){
+    $('.reverseDel1').click(function(){
       $('.doctorPanel').css({'display':'block'});
       $('.blockPanel').css({'display':'none'});
     });
