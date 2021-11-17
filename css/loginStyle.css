@@ -77,7 +77,7 @@ padding-left: 130px;
 }
 @media (min-width:320px) and (max-width:767px) {
    .loginPage .left form{
-      width: 70%;
+      width:70%;
       padding: 10px;
   }
 }
@@ -176,14 +176,14 @@ padding-left: 130px;
    color: #fff;
    font-size: 16px;
    position: absolute;
-   top: 314px;
+   top: 312px;
    left: 433px;
 }
 @media (min-width:320px) and (max-width:767px) {
    .loginPage .left i{
       font-size: 12px;
-      top: 138px;
-      left: 135px;
+      top: 136px;
+      left:150px !important;
    }
 }
 @media (max-width:604.8px) {
@@ -235,6 +235,7 @@ padding-left: 130px;
 @media (min-width:320px) and (max-width:767px) {
    .loginPage .login{
       font-size: 12px;
+      padding:10px 20px;
    }
 }
 @media (min-width:768px) and (max-width:991px) {
@@ -359,7 +360,8 @@ padding-left: 130px;
 .modal .modal-body input{
    display: block;
    margin-top: 20px;
-   padding: 10px 10px;
+   padding: 10px;
+   padding-left: 60px;
    font-size: 16px;
    background-color: #40C0DC;
    color: #fff;
@@ -384,6 +386,7 @@ padding-left: 130px;
    background-color: #fff;
    color: #40C0DC;
    border: 0.5px solid transparent;
+   padding-left: 10px;
     }
     .modal .modal-body input:last-child:hover{
       background-color: #40C0DC;

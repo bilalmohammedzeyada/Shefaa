@@ -31,14 +31,12 @@ $(document).ready(function(){
 });
    // control panel end
 
-
   }
-
+//=================================================================
 
   // بعد اضافة الطبيب 
   $('.create').click(function(){
     $('.doctorPanel').css({'display':'block'});
-    $('.blockPanel').css({'display':'none'});
   });
 
   // عند الضغط على زر تأكيد الحظر
@@ -57,6 +55,7 @@ $(document).ready(function(){
       $('.doctorPanel').css({'display':'block'});
       $('.blockPanel').css({'display':'none'});
     });
+
 // بعد الضغط على زر ازالة الحظر
     $('.sureUn').click(function(){
       $('.doctorPanel').css({'display':'block'});
@@ -69,9 +68,17 @@ $(document).ready(function(){
 
     // التعديل على eyeslash
     $('.pass').click(function(){
-     $('.password').attr('type','text');
-     $('.fa-eye-slash').attr('class','fa fa-eye')
+      var text = $('.password').attr('type');
+      if(text == 'password'){
+        $('.password').attr('type','text');
+        $('.fa-eye-slash').attr('class','fa fa-eye')
+      }
+      else{
+        $('.password').attr('type','password');
+        $('.fa-eye').attr('class','fa fa-eye-slash')
+      }
     });
+
 
   
 });
