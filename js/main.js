@@ -30,5 +30,53 @@ $(document).ready(function(){
     $('.addDoc').css({'display':'none'});
 });
    // control panel end
+
+
   }
+
+
+  // بعد اضافة الطبيب 
+  $('.create').click(function(){
+    $('.doctorPanel').css({'display':'block'});
+    $('.blockPanel').css({'display':'none'});
+  });
+
+  // عند الضغط على زر تأكيد الحظر
+ 
+  $('.sureBlock').click(function(){
+    $('.doctorPanel').css({'display':'none'});
+    $('.blockPanel').css({'display':'block'});
+  });
+  $('.reverse').click(function(){
+    $('.doctorPanel').css({'display':'block'});
+    $('.blockPanel').css({'display':'none'});
+  });
+
+    // عند الضغط على زر تأكيد الحذف
+    $('.sureDelete').click(function(){
+      $('.doctorPanel').css({'display':'block'});
+      $('.blockPanel').css({'display':'none'});
+    });
+    $('.reverseDel').click(function(){
+      $('.doctorPanel').css({'display':'block'});
+      $('.blockPanel').css({'display':'none'});
+    });
+// بعد الضغط على زر ازالة الحظر
+    $('.sureUn').click(function(){
+      $('.doctorPanel').css({'display':'block'});
+      $('.blockPanel').css({'display':'none'});
+    });
+    $('.reverseDel').click(function(){
+      $('.doctorPanel').css({'display':'none'});
+      $('.blockPanel').css({'display':'block'});
+    });
+
+    // التعديل على eyeslash
+    $('.pass').click(function(){
+     $('.password').attr('type','text');
+     $('.fa-eye-slash').attr('class','fa fa-eye')
+    });
+
+  
 });
+
